@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Domino Score AI</title>
+  <meta name="description" content="Privacy Policy for Domino Score AI mobile application developed by Cherif Oualid.">
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --accent-badge: #e0f2fe;
+      --accent-badge-text: #0369a1;
+      --gold-accent: #d97706;
+      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-ar: "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.65;
+      padding: 24px 16px 60px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Language Switcher Bar */
+    .lang-switcher-wrapper {
+      position: sticky;
+      top: 16px;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      padding: 6px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+      gap: 4px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .lang-btn:hover {
+      color: var(--text-main);
+      background: #f1f5f9;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 2px 4px rgba(2, 132, 199, 0.3);
+    }
+
+    /* Policy Card */
+    .policy-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--card-shadow);
+      padding: 40px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .policy-card {
+        padding: 28px 20px;
+      }
+    }
+
+    /* Header section */
+    .policy-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-badge);
+      color: var(--accent-badge-text);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+
+    .meta-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Content styling */
+    .section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #334155;
+      font-size: 15.5px;
+    }
+
+    ul {
+      margin-bottom: 14px;
+      padding-inline-start: 24px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .highlight-box {
+      background: #f0fdf4;
+      border-inline-start: 4px solid #16a34a;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight-box.warning {
+      background: #fffbeb;
+      border-inline-start-color: var(--gold-accent);
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-weight: 500;
+      color: #14532d;
+    }
+
+    .highlight-box.warning p {
+      color: #78350f;
+    }
+
+    .contact-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Language containers */
+    .lang-content {
+      display: none;
+    }
+
+    .lang-content.active {
+      display: block;
+    }
+
+    /* RTL specifics for Arabic */
+    [dir="rtl"] {
+      font-family: var(--font-ar);
+      text-align: right;
+    }
+
+    [dir="rtl"] h1, [dir="rtl"] h2 {
+      font-family: var(--font-ar);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Language Switcher Bar -->
+    <div class="lang-switcher-wrapper">
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+        <button class="lang-btn" onclick="switchLanguage('ar')">العربية</button>
+        <button class="lang-btn" onclick="switchLanguage('fr')">Français</button>
+      </div>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="policy-card">
+
+      <!-- ============================================================== -->
+      <!-- ENGLISH VERSION -->
+      <!-- ============================================================== -->
+      <div id="content-en" class="lang-content active" dir="ltr" lang="en">
+        <header class="policy-header">
+          <div class="app-badge">Official Policy</div>
+          <h1>Privacy Policy for Domino Score AI</h1>
+          <div class="meta-info">
+            <div class="meta-item"><strong>Developer:</strong> Cherif Oualid</div>
+            <div class="meta-item"><strong>Effective Date:</strong> November 25, 2026</div>
+          </div>
+        </header>
+
+        <section class="section">
+          <h2><span class="icon">👋</span> 1. Introduction</h2>
+          <p>
+            Welcome to <strong>Domino Score AI</strong>, developed by <strong>Cherif Oualid</strong>. Your privacy is of paramount importance to us. This Privacy Policy describes how we handle information in connection with your use of our mobile application.
+          </p>
+          <p>
+            By downloading, accessing, or using Domino Score AI, you agree to the practices outlined in this policy.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📷</span> 2. Camera Usage & On-Device Processing</h2>
+          <p>
+            Domino Score AI requires access to your device's camera solely to deliver its core feature: automatic detection and counting of domino pips (points).
+          </p>
+          <div class="highlight-box">
+            <p>
+              🔒 <strong>100% On-Device Processing:</strong> All computer vision and machine learning calculations happen directly and locally on your phone.
+            </p>
+          </div>
+          <ul>
+            <li>We do <strong>not</strong> record, capture, or save any photos or video footage to persistent storage.</li>
+            <li>No images or camera streams are ever transmitted, uploaded, or shared with external servers or third parties.</li>
+            <li>Camera access is active only while the AI scanner screen is open and stops immediately once you navigate away.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📢</span> 3. Advertising (Google AdMob)</h2>
+          <p>
+            The free version of Domino Score AI displays third-party advertisements delivered by <strong>Google AdMob</strong>.
+          </p>
+          <p>
+            To serve contextual, personalized, or frequency-capped advertisements, Google AdMob may collect and process pseudonymous identifiers and device data, including:
+          </p>
+          <ul>
+            <li>Google Advertising ID (AAID on Android).</li>
+            <li>General device details (device model, operating system version, carrier).</li>
+            <li>Coarse IP address (used for approximate geographic location).</li>
+            <li>Ad performance and interaction metrics.</li>
+          </ul>
+          <p>
+            For more details on how Google handles advertising data and how you can opt out of personalized ads in your Android device settings, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Technologies</a>.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">💳</span> 4. In-App Purchases (Google Play Billing)</h2>
+          <p>
+            Domino Score AI offers an optional in-app purchase to permanently remove all advertisements ("Remove Ads Lifetime").
+          </p>
+          <ul>
+            <li>All financial transactions are handled exclusively and securely by <strong>Google Play In-App Billing</strong>.</li>
+            <li>The developer does <strong>not</strong> collect, process, or store your credit card numbers, bank details, or billing addresses.</li>
+            <li>Your purchase status is verified securely via cryptographic signatures provided by the Google Play Store and stored encrypted on your device.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">💾</span> 5. Local Storage & Security</h2>
+          <p>
+            Match scores, game history, and custom player/team names are stored exclusively in the local sandboxed storage on your device (Hive / Encrypted Storage). We do not operate remote user accounts, and your game scores remain strictly private to your device.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">👶</span> 6. Children's Privacy</h2>
+          <p>
+            Domino Score AI is designed for a general audience and is not directed at children under the age of 13. We do not knowingly collect personal identifiable information from children under 13.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">🔄</span> 7. Changes to This Privacy Policy</h2>
+          <p>
+            We may occasionally update this Privacy Policy. Any updates will be reflected on this page with an updated "Effective Date". We encourage you to review this policy periodically.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📬</span> 8. Contact Information</h2>
+          <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the developer directly:
+          </p>
+          <div class="contact-box">
+            <p><strong>Developer:</strong> Cherif Oualid</p>
+            <p><strong>Application:</strong> Domino Score AI</p>
+            <p><strong>Support Email:</strong> <a href="mailto:cherif.dev.support@gmail.com">cherif.dev.support@gmail.com</a></p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- ARABIC VERSION -->
+      <!-- ============================================================== -->
+      <div id="content-ar" class="lang-content" dir="rtl" lang="ar">
+        <header class="policy-header">
+          <div class="app-badge">الوثيقة الرسمية</div>
+          <h1>سياسة الخصوصية لتطبيق Domino Score AI</h1>
+          <div class="meta-info">
+            <div class="meta-item"><strong>المطوّر:</strong> Cherif Oualid</div>
+            <div class="meta-item"><strong>تاريخ السريان:</strong> 25 نوفمبر 2026</div>
+          </div>
+        </header>
+
+        <section class="section">
+          <h2><span class="icon">👋</span> 1. مقدمة</h2>
+          <p>
+            مرحباً بك في تطبيق <strong>Domino Score AI</strong>، المطوّر بواسطة <strong>Cherif Oualid</strong>. نحن نولي أقصى درجات الاهتمام لحماية خصوصيتك وبياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية التعامل مع البيانات عند استخدامك لتطبيقنا.
+          </p>
+          <p>
+            باستخدامك لتطبيق Domino Score AI، فإنك توافق على الممارسات والشروط الواردة في هذه الوثيقة.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📷</span> 2. استخدام الكاميرا والمعالجة على الجهاز (On-Device AI)</h2>
+          <p>
+            يطلب التطبيق إذن الوصول إلى الكاميرا لغرض وحيد وأساسي: مسح قطع الدومينو تلقائياً واكتشاف النقاط الدائرية (Pips) لحساب نتيجة الجولة بدقة.
+          </p>
+          <div class="highlight-box">
+            <p>
+              🔒 <strong>معالجة محلية بالكامل 100%:</strong> تتم كافة عمليات الرؤية الحاسوبية والذكاء الاصطناعي محلياً داخل معالج هاتفك دون اتصال بالإنترنت.
+            </p>
+          </div>
+          <ul>
+            <li>لا نقوم بحفظ أو تسجيل أو تخزين أي صور أو مقاطع فيديو في الذاكرة الدائمة للهاتف.</li>
+            <li>لا يتم إرسال أو رفع أو مشاركة أي بث من الكاميرا أو إطارات مصورة مع أي خوادم خارجية أو أطراف ثالثة نهائياً.</li>
+            <li>تعمل الكاميرا فقط عند فتح شاشة الماسح الذكي، وتتوقف فور مغادرتك للشاشة.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📢</span> 3. منظومة الإعلانات (Google AdMob)</h2>
+          <p>
+            تتضمن النسخة المجانية من التطبيق إعلانات رقمية مدعومة من شبكة <strong>Google AdMob</strong>.
+          </p>
+          <p>
+            لتقديم إعلانات ملائمة، قد تجمع خدمة Google AdMob تلقائياً بعض المعرفات غير الشخصية من جهازك وفقاً لسياسات Google المعتمدة، مثل:
+          </p>
+          <ul>
+            <li>معرّف الإعلانات الخاص بنظام أندرويد (Google Advertising ID - AAID).</li>
+            <li>معلومات عامة عن الجهاز (نوع الطراز، إصدار نظام أندرويد).</li>
+            <li>عنوان بروتوكول الإنترنت التقريبي (IP Address) لتحديد الموقع الجغرافي التقريبي.</li>
+            <li>بيانات التفاعل مع الإعلانات المعروضة.</li>
+          </ul>
+          <p>
+            لمعرفة المزيد حول كيفية معالجة بيانات الإعلانات وكيفية إيقاف الإعلانات المخصصة من إعدادات جهازك، يمكنك الاطلاع على <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">سياسة خصوصية Google</a> و <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">تقنيات الإعلانات من Google</a>.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">💳</span> 4. المشتريات داخل التطبيق (Google Play Billing)</h2>
+          <p>
+            يتيح التطبيق ميزة اختيارية لشراء "إزالة الإعلانات للأبد" لتعطيل كافة الإعلانات البينية وإعلانات البانر بشكل دائم.
+          </p>
+          <ul>
+            <li>تتم كافة عمليات الدفع والاشتراك حصرياً وعبر نظام الفوترة المشفر والآمن لمتجر <strong>Google Play</strong>.</li>
+            <li>لا يقوم التطبيق أو المطوّر بجمع أو تخزين أو معالجة أي أرقام بطاقات مصرفية أو حسابات بنكية.</li>
+            <li>تُخزّن حالة الشراء بشكل مشفر ومؤمّن داخل التخزين الآمن للهاتف مع دعم استعادة المشتريات التلقائي.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">💾</span> 5. تخزين البيانات محلياً والأمان</h2>
+          <p>
+            تُحفظ سجلات المباريات السابقة، ونتائج الجولات، وأسماء الفرق، والإعدادات التفضيلية محلياً داخل مساحة التخزين الخاصة بالتطبيق على جهازك فقط. لا يتطلب التطبيق تسجيل حساب مستخدم، ولا تتم مزامنة نتائج مبارياتك مع أي قاعدة بيانات سحابية خارجية.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">👶</span> 6. خصوصية الأطفال</h2>
+          <p>
+            تطبيق Domino Score AI موجّه للجمهور العام من محبي ألعاب الدومينو، وليس مخصصاً للأطفال دون سن 13 عاماً، ولا نجمع عمداً أي بيانات تعريفية من الأطفال.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">🔄</span> 7. التعديلات على سياسة الخصوصية</h2>
+          <p>
+            قد نقوم بتحديث سياسة الخصوصية هذه عند إضافة ميزات جديدة أو امتثالاً للمتطلبات التنظيمية. سيتم نشر أي تعديل على هذه الصفحة مع تحديث "تاريخ السريان".
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📬</span> 8. التواصل مع المطوّر</h2>
+          <p>
+            إذا كان لديك أي استفسار أو طلب يتعلق بسياسة الخصوصية هذه أو بحماية بياناتك، يمكنك التواصل معنا مباشرة:
+          </p>
+          <div class="contact-box">
+            <p><strong>المطوّر:</strong> Cherif Oualid</p>
+            <p><strong>التطبيق:</strong> Domino Score AI</p>
+            <p><strong>البريد الإلكتروني للدعم:</strong> <a href="mailto:cherif.dev.support@gmail.com">cherif.dev.support@gmail.com</a></p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- FRENCH VERSION -->
+      <!-- ============================================================== -->
+      <div id="content-fr" class="lang-content" dir="ltr" lang="fr">
+        <header class="policy-header">
+          <div class="app-badge">Politique Officielle</div>
+          <h1>Politique de Confidentialité - Domino Score AI</h1>
+          <div class="meta-info">
+            <div class="meta-item"><strong>Développeur :</strong> Cherif Oualid</div>
+            <div class="meta-item"><strong>Date d'effet :</strong> 25 novembre 2026</div>
+          </div>
+        </header>
+
+        <section class="section">
+          <h2><span class="icon">👋</span> 1. Introduction</h2>
+          <p>
+            Bienvenue sur <strong>Domino Score AI</strong>, développé par <strong>Cherif Oualid</strong>. La protection de votre vie privée est au cœur de nos priorités. Cette politique de confidentialité détaille nos pratiques concernant la collecte et l'utilisation de vos informations lors de l'utilisation de l'application.
+          </p>
+          <p>
+            En téléchargeant ou en utilisant l'application, vous acceptez les pratiques décrites ci-dessous.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📷</span> 2. Utilisation de l'appareil photo & Traitement sur l'appareil</h2>
+          <p>
+            Domino Score AI demande l'accès à votre caméra uniquement pour fournir sa fonctionnalité principale : la détection automatique et le comptage des points sur les dominos.
+          </p>
+          <div class="highlight-box">
+            <p>
+              🔒 <strong>Traitement 100% local (On-Device AI) :</strong> Tous les calculs de vision par ordinateur et d'intelligence artificielle s'exécutent directement et exclusivement sur votre appareil.
+            </p>
+          </div>
+          <ul>
+            <li>Nous <strong>n'enregistrons</strong>, ne capturons ni ne sauvegardons aucune photo ou vidéo sur la mémoire permanente de l'appareil.</li>
+            <li>Aucun flux vidéo ni image n'est envoyé, téléversé ou partagé avec des serveurs distants ou des tiers.</li>
+            <li>L'appareil photo n'est actif que lorsque l'écran du scanner intelligent est ouvert et s'arrête instantanément dès que vous quittez cet écran.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📢</span> 3. Publicités (Google AdMob)</h2>
+          <p>
+            La version gratuite de Domino Score AI diffuse des annonces publicitaires fournies par la régie <strong>Google AdMob</strong>.
+          </p>
+          <p>
+            Afin de diffuser des publicités pertinentes, Google AdMob peut collecter et traiter certains identifiants techniques conformément aux politiques de confidentialité de Google, notamment :
+          </p>
+          <ul>
+            <li>L'identifiant publicitaire Android (Google Advertising ID - AAID).</li>
+            <li>Des informations générales sur le modèle de l'appareil et la version du système d'exploitation.</li>
+            <li>L'adresse IP approximative pour déterminer la zone géographique générale.</li>
+            <li>Des données statistiques relatives aux interactions avec les annonces.</li>
+          </ul>
+          <p>
+            Pour en savoir plus sur la gestion des données publicitaires par Google, veuillez consulter la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Google</a> et les <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Technologies publicitaires de Google</a>.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">💳</span> 4. Achats intégrés (Facturation Google Play)</h2>
+          <p>
+            L'application propose un achat intégré optionnel pour supprimer définitivement toutes les publicités (« Supprimer les pubs à vie »).
+          </p>
+          <ul>
+            <li>Toutes les transactions financières sont gérées exclusivement et de façon sécurisée par le système de facturation officiel du <strong>Google Play Store</strong>.</li>
+            <li>Le développeur ne collecte, ne traite ni ne stocke aucune coordonnée bancaire ou numéro de carte de crédit.</li>
+            <li>L'état de votre achat est vérifié de manière sécurisée et enregistré chiffré sur votre appareil.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">💾</span> 5. Stockage local et sécurité</h2>
+          <p>
+            L'historique de vos parties, les scores et les noms personnalisés d'équipes ou de joueurs sont stockés exclusivement dans la mémoire locale de votre appareil (Hive / Stockage chiffré). Nous ne gérons aucun compte utilisateur externe et vos scores restent strictement sur votre appareil.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">👶</span> 6. Protection des mineurs</h2>
+          <p>
+            Domino Score AI s'adresse à un public général et n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons sciemment aucune donnée personnelle auprès d'enfants de moins de 13 ans.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">🔄</span> 7. Modifications de la politique de confidentialité</h2>
+          <p>
+            Nous nous réservons le droit de mettre à jour cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec la date de prise d'effet actualisée.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><span class="icon">📬</span> 8. Contact</h2>
+          <p>
+            Pour toute question ou demande relative à cette politique de confidentialité, vous pouvez contacter directement le développeur :
+          </p>
+          <div class="contact-box">
+            <p><strong>Développeur :</strong> Cherif Oualid</p>
+            <p><strong>Application :</strong> Domino Score AI</p>
+            <p><strong>E-mail de support :</strong> <a href="mailto:cherif.dev.support@gmail.com">cherif.dev.support@gmail.com</a></p>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Domino Score AI &bull; Cherif Oualid &bull; All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      // Hide all contents
+      document.querySelectorAll('.lang-content').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      // Deactivate all buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      // Activate selected content and button
+      const targetContent = document.getElementById('content-' + lang);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+
+      // Find and activate the clicked button
+      const buttons = document.querySelectorAll('.lang-btn');
+      if (lang === 'en' && buttons[0]) buttons[0].classList.add('active');
+      if (lang === 'ar' && buttons[1]) buttons[1].classList.add('active');
+      if (lang === 'fr' && buttons[2]) buttons[2].classList.add('active');
+
+      // Update HTML root attributes
+      const htmlTag = document.documentElement;
+      if (lang === 'ar') {
+        htmlTag.setAttribute('dir', 'rtl');
+        htmlTag.setAttribute('lang', 'ar');
+        document.title = 'سياسة الخصوصية - Domino Score AI';
+      } else if (lang === 'fr') {
+        htmlTag.setAttribute('dir', 'ltr');
+        htmlTag.setAttribute('lang', 'fr');
+        document.title = 'Politique de Confidentialité - Domino Score AI';
+      } else {
+        htmlTag.setAttribute('dir', 'ltr');
+        htmlTag.setAttribute('lang', 'en');
+        document.title = 'Privacy Policy - Domino Score AI';
+      }
+
+      // Update URL hash
+      if (history.replaceState) {
+        history.replaceState(null, null, '#' + lang);
+      }
+    }
+
+    // Auto-detect language from URL hash or browser preference
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '').toLowerCase();
+      if (hash === 'ar' || hash === 'fr' || hash === 'en') {
+        switchLanguage(hash);
+      } else {
+        const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        if (browserLang.startsWith('ar')) {
+          switchLanguage('ar');
+        } else if (browserLang.startsWith('fr')) {
+          switchLanguage('fr');
+        } else {
+          switchLanguage('en');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
